@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://pylemonorg.github.io</id>
     <title>Gridea</title>
-    <updated>2020-05-03T06:34:01.676Z</updated>
+    <updated>2020-05-03T06:38:08.040Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://pylemonorg.github.io"/>
     <link rel="self" href="https://pylemonorg.github.io/atom.xml"/>
@@ -16,40 +16,59 @@
         <link href="https://pylemonorg.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>[TOC]</p>
+        <summary type="html"><![CDATA[<p><ul class="markdownIt-TOC">
+<li><a href="#%E7%AE%80%E4%BB%8B-%E5%8F%82%E8%80%83">简介-参考</a></li>
+</ul>
+</p>
 <h1 id="简介-参考">简介-参考</h1>
 <blockquote>
 <p><strong>windows不支持mitmproxy的控制台的接口输出，但是可以使用mitmdump和mitmweb</strong></p>
 </blockquote>
-<ul>
-<li>参考</li>
-<li><a href="https://mitmproxy.org/">官网</a></li>
-<li><a href="https://github.com/mitmproxy/mitmproxy">github</a></li>
-<li><a href="http://www.cnblogs.com/grandlulu/p/9525417.html">国内博客</a></li>
-</ul>
-<figure data-type="image" tabindex="1"><img src="https://img-blog.csdnimg.cn/20200427191506954.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
-<center>- 版本参考 -</center>
-<h1 id="安装">安装</h1>
-<h2 id="linux下的安装">Linux下的安装</h2>
-<ul>
-<li>下载之后，需要解压并将其配置环境变量中：</li>
-<li><code>tar -zxvf mitmproxy.....-linux.tar.gz</code>  解压</li>
-<li><code>sodu mv mitmproxy mitmdump mitmweb /user/bin</code>  配置环境</li>
-<li>这样就可以将3个可执行文件移动了/usr/bin目录。而一般情况下，/usr/bin目录的已经配置在环境变量下，就可以直接调用这3个工具</li>
-</ul>
-<h2 id="mac下的安装">Mac下的安装</h2>
-<ul>
-<li>直接使用 <code>brew install mitmproxy</code></li>
-</ul>
-<h1 id="安装数字证书">安装数字证书</h1>
-<p>运行<code>mitdump</code>命令即可  <strong>注意：在当前目录生成.mimtproxy文件</strong><br>
-<img src="https://img-blog.csdnimg.cn/20200427191600447.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-HAXyyQda-1587985997338)(1483FF23990B41E9BAE1A41FE61C6B4A)]" loading="lazy"></p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>[TOC]</p>
+        <content type="html"><![CDATA[<p><ul class="markdownIt-TOC">
+<li><a href="#%E7%AE%80%E4%BB%8B-%E5%8F%82%E8%80%83">简介-参考</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85">安装</a>
+<ul>
+<li><a href="#linux%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85">Linux下的安装</a></li>
+<li><a href="#mac%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85">Mac下的安装</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%89%E8%A3%85%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6">安装数字证书</a>
+<ul>
+<li><a href="#windows">windows</a></li>
+<li><a href="#mac">mac</a></li>
+<li><a href="#android-and-ios">android and ios</a></li>
+<li><a href="#web%E5%AE%89%E8%A3%85">web安装</a></li>
+</ul>
+</li>
+<li><a href="#%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4">操作命令</a>
+<ul>
+<li><a href="#pip-install-mitmproxy">pip install mitmproxy</a></li>
+<li><a href="#%E5%90%AF%E5%8A%A8">启动</a></li>
+<li><a href="#%E5%8F%82%E6%95%B0">参数</a></li>
+</ul>
+</li>
+<li><a href="#%E6%8B%A6%E6%88%AApc%E8%AF%B7%E6%B1%82%E8%AE%BE%E7%BD%AE">拦截pc请求设置</a></li>
+<li><a href="#%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81">示例代码</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE%E4%BA%8C%E7%BA%A7%E4%BB%A3%E7%90%86">配置二级代理</a>
+<ul>
+<li><a href="#%E6%96%B9%E6%B3%95%E4%B8%80">方法一</a>
+<ul>
+<li><a href="#%E4%BF%AE%E6%94%B9x2yyy%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6">修改X2yyy配置文件</a></li>
+<li><a href="#%E6%8B%A6%E6%88%AA%E6%96%87%E4%BB%B6">拦截文件</a></li>
+<li><a href="#%E5%90%AF%E5%8A%A8%E6%96%87%E4%BB%B6">启动文件</a></li>
+</ul>
+</li>
+<li><a href="#%E6%96%B9%E6%B3%95%E4%BA%8C">方法二</a></li>
+</ul>
+</li>
+</ul>
+</p>
 <h1 id="简介-参考">简介-参考</h1>
 <blockquote>
 <p><strong>windows不支持mitmproxy的控制台的接口输出，但是可以使用mitmdump和mitmweb</strong></p>
 </blockquote>
+<!-- more -->
 <ul>
 <li>参考</li>
 <li><a href="https://mitmproxy.org/">官网</a></li>
@@ -73,7 +92,6 @@
 <h1 id="安装数字证书">安装数字证书</h1>
 <p>运行<code>mitdump</code>命令即可  <strong>注意：在当前目录生成.mimtproxy文件</strong><br>
 <img src="https://img-blog.csdnimg.cn/20200427191600447.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-HAXyyQda-1587985997338)(1483FF23990B41E9BAE1A41FE61C6B4A)]" loading="lazy"></p>
-<!-- more -->
 <h2 id="windows">windows</h2>
 <p>双击<code>mitmproxy-ca.p12</code>安装到“受信任的根证书颁发机构”即可</p>
 <h2 id="mac">mac</h2>
