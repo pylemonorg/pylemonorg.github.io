@@ -69,7 +69,7 @@
       <div class="hide-on-mobile hide-on-tablet hide-on-desktop">
         <div id="search-lightbox" class="grid-container grid-small grid-parent mfp-hide">
           <div class="search-wrapper section">
-            <form id="gridea-search-form" data-update="1588486492619" action="/search/index.html" class="search-form" _lpchecked="1">
+            <form id="gridea-search-form" data-update="1588487528373" action="/search/index.html" class="search-form" _lpchecked="1">
               <input type="text" name="q" id="s" value="" class="search-field" placeholder="搜点啥..." aria-label="搜点啥..." required="">
               <button type="submit" class="submit" aria-label="Submit">
                 <i class="fa fa-search-line"></i>
@@ -90,20 +90,62 @@
               
               <div class="articles columns-3">
                 
-                <article class="bgstyle grid-33 tablet-grid-50 mobile-grid-100 np-mobile post type-post status-publish format-standard has-post-thumbnail hentry" style="">
-                  <div class="article-wrapper  cover" style="background-image: url('https://pylemonorg.github.io/post-images/hello-gridea.png');">
+              <article class="default grid-33 tablet-grid-50 mobile-grid-100 np-mobile post type-post status-publish format-standard has-post-thumbnail hentry">
+                <div class="article-wrapper">
                   <header>
-                    
-                      <div class="tags absolute">
-                        <a href="https://pylemonorg.github.io/tag/kkAu3eoWn/" class="ctag ctag-0 ctag-kkAu3eoWn">Gridea</a>
+                    <div class="post-format-image post-format-wrapper">
+                      <div class="featured-image">
+                        <a href="https://pylemonorg.github.io/post/hello-gridea/" class="thumb hover-effect">
+                          <span class="fullimage cover" role="img" aria-label="" style="background-image: url('https://pylemonorg.github.io/post-images/hello-gridea.png');"></span>
+                        </a>
+                        
+                        <div class="tags absolute">
+                          <a href="https://pylemonorg.github.io/tag/GFJ2bAQ5i/" class="ctag ctag-0 ctag-GFJ2bAQ5i">Mitmproxy</a>
+                        </div>
+                        
                       </div>
-                    
+                    </div>                    
                     <div class="meta">
                       <time datetime="2018-12-12"><i class="fa fa-calendar"></i><span class="lately">1 年前</span></time>
                       <div class="clear"></div>
                     </div>
+
                     <h1 class="title main-title gradient-effect"><a href="https://pylemonorg.github.io/post/hello-gridea/">Mitmproxy详细教程及二级代理</a></h1>
                   </header>
+
+                  <div class="post-excerpt">
+                      <p>[TOC]</p>
+<h1 id="简介-参考">简介-参考</h1>
+<blockquote>
+<p><strong>windows不支持mitmproxy的控制台的接口输出，但是可以使用mitmdump和mitmweb</strong></p>
+</blockquote>
+<ul>
+<li>参考</li>
+<li><a href="https://mitmproxy.org/">官网</a></li>
+<li><a href="https://github.com/mitmproxy/mitmproxy">github</a></li>
+<li><a href="http://www.cnblogs.com/grandlulu/p/9525417.html">国内博客</a></li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://img-blog.csdnimg.cn/20200427191506954.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<center>- 版本参考 -</center>
+<h1 id="安装">安装</h1>
+<h2 id="linux下的安装">Linux下的安装</h2>
+<ul>
+<li>下载之后，需要解压并将其配置环境变量中：</li>
+<li><code>tar -zxvf mitmproxy.....-linux.tar.gz</code>  解压</li>
+<li><code>sodu mv mitmproxy mitmdump mitmweb /user/bin</code>  配置环境</li>
+<li>这样就可以将3个可执行文件移动了/usr/bin目录。而一般情况下，/usr/bin目录的已经配置在环境变量下，就可以直接调用这3个工具</li>
+</ul>
+<h2 id="mac下的安装">Mac下的安装</h2>
+<ul>
+<li>直接使用 <code>brew install mitmproxy</code></li>
+</ul>
+<h1 id="安装数字证书">安装数字证书</h1>
+<p>运行<code>mitdump</code>命令即可  <strong>注意：在当前目录生成.mimtproxy文件</strong><br>
+<img src="https://img-blog.csdnimg.cn/20200427191600447.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-HAXyyQda-1587985997338)(1483FF23990B41E9BAE1A41FE61C6B4A)]" loading="lazy"></p>
+
+                    <div class="clear"></div>
+                  </div>
+
                   <footer class="author-meta">
                     <a href="" class="author" title="">
                       <span class="author-image cover" style="background-image: url('https://pylemonorg.github.io/images/avatar.png');"></span>
@@ -117,7 +159,7 @@
                     
                     <div class="clear"></div>
                   </footer>
-                  <div class="overlay"></div>       
+                  <div class="border"></div>       
                 </div>
               </article>
                 
@@ -187,7 +229,7 @@
                   <h4 class="widget-title title white bordered">标签云</h4>
                   <div class="tagcloud">
                     
-                      <a href="https://pylemonorg.github.io/tag/kkAu3eoWn/" class="ctag ctag-0 ctag-kkAu3eoWn" aria-label="">Gridea</a>
+                      <a href="https://pylemonorg.github.io/tag/GFJ2bAQ5i/" class="ctag ctag-0 ctag-GFJ2bAQ5i" aria-label="">Mitmproxy</a>
                     
                   </div>
                   <div class="clear"></div>
