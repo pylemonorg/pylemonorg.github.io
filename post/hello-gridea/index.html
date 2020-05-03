@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Hello Gridea | Gridea</title>
+<title>Mitmproxy详细教程及二级代理 | Gridea</title>
 <meta name="description" content="温故而知新" />
 <link rel="shortcut icon" href="https://pylemonorg.github.io/favicon.ico">
 <link rel="stylesheet" href="https://pylemonorg.github.io/styles/main.css">
@@ -15,14 +15,23 @@
 <script src="https://pylemonorg.github.io/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://pylemonorg.github.io/media/js/functions.js"></script>
     <meta name="referrer" content="never">
-    <meta name="description" content="👏  欢迎使用 Gridea ！
-✍️  Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...
+    <meta name="description" content="[toc]
+简介-参考
 
-Github
-Gridea 主页
-示例网站
-特性👇
-📝  你可以使用最酷的 Markdo..." />
+windows不支持mitmproxy的控制台的接口输出，但是可以使用mitmdump和mitmweb
+
+
+参考
+官网
+github
+国内博客
+
+
+- 版本参考 -
+安装
+Linux下的安装
+
+下载之后，需要解压并..." />
     <meta name="keywords" content="Gridea" />
     <script src="https://pylemonorg.github.io/media/js/waterfall.min.js"></script>
     <script src="https://pylemonorg.github.io/media/js/prism.min.js"></script>
@@ -78,7 +87,7 @@ Gridea 主页
       <div class="hide-on-mobile hide-on-tablet hide-on-desktop">
         <div id="search-lightbox" class="grid-container grid-small grid-parent mfp-hide">
           <div class="search-wrapper section">
-            <form id="gridea-search-form" data-update="1588484938278" action="/search/index.html" class="search-form" _lpchecked="1">
+            <form id="gridea-search-form" data-update="1588486492619" action="/search/index.html" class="search-form" _lpchecked="1">
               <input type="text" name="q" id="s" value="" class="search-field" placeholder="搜点啥..." aria-label="搜点啥..." required="">
               <button type="submit" class="submit" aria-label="Submit">
                 <i class="fa fa-search-line"></i>
@@ -107,7 +116,7 @@ Gridea 主页
                       <a href="https://pylemonorg.github.io/tag/kkAu3eoWn/" class="ctag ctag-0 ctag-kkAu3eoWn" aria-label="">Gridea</a>
                     
               </div>
-              <h1 class="title ularge white bold">Hello Gridea</h1>
+              <h1 class="title ularge white bold">Mitmproxy详细教程及二级代理</h1>
             </div>
           </div>
         </div>  
@@ -117,27 +126,201 @@ Gridea 主页
             <article class="main-article post">
               <section class="post-content">
                 <div class="text">
-                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+                  <p>[toc]</p>
+<h1 id="简介-参考">简介-参考</h1>
+<blockquote>
+<p><strong>windows不支持mitmproxy的控制台的接口输出，但是可以使用mitmdump和mitmweb</strong></p>
+</blockquote>
+<ul>
+<li>参考</li>
+<li><a href="https://mitmproxy.org/">官网</a></li>
+<li><a href="https://github.com/mitmproxy/mitmproxy">github</a></li>
+<li><a href="http://www.cnblogs.com/grandlulu/p/9525417.html">国内博客</a></li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://img-blog.csdnimg.cn/20200427191506954.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<center>- 版本参考 -</center>
+<h1 id="安装">安装</h1>
+<h2 id="linux下的安装">Linux下的安装</h2>
+<ul>
+<li>下载之后，需要解压并将其配置环境变量中：</li>
+<li><code>tar -zxvf mitmproxy.....-linux.tar.gz</code>  解压</li>
+<li><code>sodu mv mitmproxy mitmdump mitmweb /user/bin</code>  配置环境</li>
+<li>这样就可以将3个可执行文件移动了/usr/bin目录。而一般情况下，/usr/bin目录的已经配置在环境变量下，就可以直接调用这3个工具</li>
+</ul>
+<h2 id="mac下的安装">Mac下的安装</h2>
+<ul>
+<li>直接使用 <code>brew install mitmproxy</code></li>
+</ul>
+<h1 id="安装数字证书">安装数字证书</h1>
+<p>运行<code>mitdump</code>命令即可  <strong>注意：在当前目录生成.mimtproxy文件</strong><br>
+<img src="https://img-blog.csdnimg.cn/20200427191600447.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-HAXyyQda-1587985997338)(1483FF23990B41E9BAE1A41FE61C6B4A)]" loading="lazy"></p>
+<h2 id="windows">windows</h2>
+<p>双击<code>mitmproxy-ca.p12</code>安装到“受信任的根证书颁发机构”即可</p>
+<h2 id="mac">mac</h2>
+<p>双击<code>mitmproxy-ca-cert.pem</code>选择 <strong>“始终信任”</strong></p>
+<h2 id="android-and-ios">android and ios</h2>
+<ul>
+<li>把<code>mitmproxy-ca-cert.pem</code>证书发送到手机上，安装证书</li>
+<li>选择与pc端相同的wifi进行连接，配置pc端的ip选择和8080端口即可</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://img-blog.csdnimg.cn/20200427191627817.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-7KSfKJe6-1587985997339)(9963B582E91E4A868DFA587FA571A184)]" loading="lazy"></figure>
+<h2 id="web安装">web安装</h2>
+<ul>
+<li>cmd:<code>mitmdump --mode reverse:http://mitm.it/ -p 8080</code></li>
+<li>打开浏览器输入localhost:8080 下载对应的安装包即可</li>
+</ul>
+<figure data-type="image" tabindex="3"><img src="https://img-blog.csdnimg.cn/20200427191648594.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-TDXz5qSJ-1587985997340)(5335AEBBC1D44B59A4452984393F6B5D)]" loading="lazy"></figure>
+<h1 id="操作命令">操作命令</h1>
+<h2 id="pip-install-mitmproxy">pip install mitmproxy</h2>
+<h2 id="启动">启动</h2>
+<ul>
+<li>启动命令<code>mitmporxy</code> 默认在8080端口开启  <strong>windows不支持</strong></li>
+<li>启动视图监听命令 <code>mitmweb</code></li>
+<li>启动监听命令<code>mimtdump</code>默认在8080端口开启</li>
+</ul>
+<h2 id="参数">参数</h2>
+<ul>
+<li><code>-s</code> 在当前目录下启动文件  例<code>mitmdump -s script.py</code></li>
+<li><code>-p</code> 修改默认端口  例<code>mitmweb -p 8888</code></li>
+<li><code>-w</code> 把截获的数据保存到文件  例<code>mitmdump -w file_name</code></li>
+</ul>
+<h1 id="拦截pc请求设置">拦截pc请求设置</h1>
+<blockquote>
+<p>方式一 【推荐】：<br>
+给本地计算机设置代理即可，这样就可以监听整个电脑请求</p>
+<p>方式二 【拦截本地浏览器】：<br>
+cmd：<code>&quot;C:\Users\zsjw_pachong01\AppData\Local\Google\Chrome\Application\chrome.exe&quot; --proxy-server=127.0.0.1:8080 --ignore-certificate-errors</code><br>
+这里把谷歌的路径替换一下就可以</p>
+<p>方式三 【拦截本地浏览器】：<br>
+在谷歌商店下载<code>Proxy SwitchyOmega</code>插件，并进行设置即可(如下图)</p>
+</blockquote>
+<figure data-type="image" tabindex="4"><img src="https://img-blog.csdnimg.cn/20200427191754567.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<h1 id="示例代码">示例代码</h1>
+<p>拦截文件 scripy.py</p>
+<pre><code class="language-python">def request(flow):
+    flow.request.headers['User-Agent'] = 'MitmProxy'
+    print(flow.request.headers)
+</code></pre>
+<p>启动拦截文件<br>
+<code>mitmdump -s script.py -p 8888</code></p>
+<p>爬虫文件 spider.py</p>
+<pre><code class="language-python"># -*- coding: utf-8 -*-
+
+from selenium import webdriver
+
+options = webdriver.ChromeOptions()
+options.add_argument(r'--proxy-server=http://localhost:8888')
+driver = webdriver.Chrome(chrome_options=options)
+driver.get('https://httpbin.org/get')
+</code></pre>
+<p>效果如下<br>
+<img src="https://img-blog.csdnimg.cn/20200427191947797.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="" loading="lazy"></p>
+<h1 id="配置二级代理">配置二级代理</h1>
+<blockquote>
+<p>由于平台限制，软件看图吧</p>
+</blockquote>
+<h2 id="方法一">方法一</h2>
+<h3 id="修改x2yyy配置文件">修改X2yyy配置文件</h3>
+<p>采用的X2yyy，命令行启动代理</p>
+<p><img src="https://img-blog.csdnimg.cn/20200428170903415.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+修改config文件，注意查看下面的参数：<br>
+这里请求的类型可以是socks或者是http，如果不能fq说明请求类型不对，自己试试哪个可行用哪个！</p>
+<figure data-type="image" tabindex="5"><img src="https://img-blog.csdnimg.cn/20200428170955919.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<p>双击运行X2yyy.exe即可，测试google成功</p>
+<figure data-type="image" tabindex="6"><img src="https://img-blog.csdnimg.cn/20200428171031520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<h3 id="拦截文件">拦截文件</h3>
+<pre><code class="language-python">import mitmproxy.http
+from mitmproxy import ctx
+
+
+class Counter:
+    def __init__(self):
+        self.num = 0
+
+    def request(self, flow):
+        # if flow.request.method == &quot;CONNECT&quot;:
+        #     # If the decision is done by domain, one could also modify the server address here.
+        #     # We do it after CONNECT here to have the request data available as well.
+        #     return
+        address = ('localhost', 10808)
+        if flow.live:
+            flow.live.change_upstream_proxy_server(address)  # type: ignore
+
+
+
+addons = [
+    Counter()
+]
+</code></pre>
+<blockquote>
+<p>启动参数：mitmdump --mode upstream:http://localhost:10808/ -s xxxx.py<br>
+注意：<br>
+拦截文件的参数：address = ('localhost', 10808) 必须跟X2yyy的运行端口一致<br>
+启动参数：upstream:http://localhost:10808 必须也为X2yyy的运行端口</p>
+</blockquote>
+<h3 id="启动文件">启动文件</h3>
+<pre><code class="language-python"># -*- coding: utf-8 -*-
+'''
+@author: pylemon
+@time: 2019/12/2 18:20
+'''
+
+from selenium import webdriver
+
+# 添加 mitmporxy 拦截端口
+options = webdriver.ChromeOptions()
+options.add_argument(r'--proxy-server=http://127.0.0.1:8080')
+driver = webdriver.Chrome(chrome_options=options)
+
+driver.get('https://www.google.com')
+
+</code></pre>
+<blockquote>
+<p><strong>注意：</strong><br>
+这里代理的端口必须为mitmproxy的端口proxy-server=http://127.0.0.1:8080</p>
+</blockquote>
+<figure data-type="image" tabindex="7"><img src="https://img-blog.csdnimg.cn/20200428171335182.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<h2 id="方法二">方法二</h2>
+<p>这里使用Sxx软件实现二级代理</p>
+<blockquote>
+<p>mitmdump 启动文件<br>
+<strong>注意</strong><br>
+这里<code>import socks</code> 可能会报错 需要手动导入包源文件<br>
+方式一：<a href="http://socksipy.sourceforge.net/">官网</a> <a href="https://sourceforge.net/projects/socksipy/">下载地址</a><br>
+方式二：<a href="http://note.youdao.com/noteshare?id=416a40b3a2d6c04a06692fea2e25e21a">源文件下载</a>（记得看源文件说明）<br>
+文件保存路径：<code>python\Lib\site-packages</code></p>
+</blockquote>
+<pre><code class="language-python">import socks
+import socket
+socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS5, &quot;localhost&quot;, 1080)
+socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS4, &quot;localhost&quot;, 1080)
+socks.setdefaultproxy(socks.PROXY_TYPE_HTTP, &quot;localhost&quot;, 1080)
+
+socket.socket = socks.socksocket
+def request(flow):
+    # proxy = ('localhost', 1080)
+    # flow.live.change_upstream_proxy_server(proxy)
+    pass
+</code></pre>
+<blockquote>
+<p>测试代码文件<br>
+test_proxy.py</p>
+</blockquote>
+<pre><code class="language-python"># -*- coding: utf-8 -*-
+from selenium import webdriver
+
+options = webdriver.ChromeOptions()
+# options.add_argument('--proxy-server={}'.format('http://default-upstream-proxy.local:8080'))
+options.add_argument('--proxy-server={}'.format('http://127.0.0.1:8080'))
+driver = webdriver.Chrome(chrome_options=options)
+
+driver.get('https://httpbin.org/get')
+
+</code></pre>
+<blockquote>
+<p>效果如下</p>
+</blockquote>
+<figure data-type="image" tabindex="8"><img src="https://img-blog.csdnimg.cn/20200428171456299.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
 
                 </div>
                 <div class="clear"></div>
@@ -212,7 +395,7 @@ jQuery(document).ready(function($){
                     <div class="info gradient-effect">
                       <time datetime="2018-12-12">2018-12-12</time>
                       <h4 class="title usmall">
-                        <a href="https://pylemonorg.github.io/post/hello-gridea/">Hello Gridea</a>
+                        <a href="https://pylemonorg.github.io/post/hello-gridea/">Mitmproxy详细教程及二级代理</a>
                       </h4>
                     </div>
                     <div class="clear"></div>
