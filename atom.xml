@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://pylemonorg.github.io</id>
     <title>Pylemon Blog</title>
-    <updated>2020-08-02T09:47:10.064Z</updated>
+    <updated>2020-08-02T10:09:24.840Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://pylemonorg.github.io"/>
     <link rel="self" href="https://pylemonorg.github.io/atom.xml"/>
@@ -10,6 +10,85 @@
     <logo>https://pylemonorg.github.io/images/avatar.png</logo>
     <icon>https://pylemonorg.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Pylemon Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[EditThisCookie chrome插件使用&cookie属性介绍]]></title>
+        <id>https://pylemonorg.github.io/post/editthiscookie-chrome-cha-jian-shi-yong-andcookie-shu-xing-jie-shao/</id>
+        <link href="https://pylemonorg.github.io/post/editthiscookie-chrome-cha-jian-shi-yong-andcookie-shu-xing-jie-shao/">
+        </link>
+        <updated>2020-08-02T10:05:48.000Z</updated>
+        <summary type="html"><![CDATA[<p></p>
+<p>EditThisCookie是一个cookie管理器。您可以添加，删除，编辑，搜索，锁定和屏蔽cookies！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><ul class="markdownIt-TOC">
+<li><a href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85">下载安装</a></li>
+<li><a href="#%E6%A6%82%E8%BF%B0">概述</a></li>
+<li><a href="#%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">功能介绍</a>
+<ul>
+<li><a href="#cookie-%E5%B1%9E%E6%80%A7">cookie 属性</a></li>
+<li><a href="#%E7%BC%96%E8%BE%91cookie">编辑cookie</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96%E5%8A%9F%E8%83%BD">其他功能</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<p>EditThisCookie是一个cookie管理器。您可以添加，删除，编辑，搜索，锁定和屏蔽cookies！</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://img-blog.csdnimg.cn/20200801163359931.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<h1 id="下载安装">下载安装</h1>
+<ol>
+<li>通过chrome应用商店搜索 <code>EditThisCookie</code> 安装</li>
+<li><strong>【推荐】</strong> 通过chrome插件管理 添加 加载已解压的扩展程序。大家把压缩包解压再添加即可，下载地址：https://download.csdn.net/download/qq_27648991/12678652</li>
+</ol>
+<figure data-type="image" tabindex="2"><img src="https://img-blog.csdnimg.cn/20200801164355254.png" alt="在这里插入图片描述" loading="lazy"></figure>
+<h1 id="概述">概述</h1>
+<p>与您的设备兼容<br>
+EditThisCookie是一个cookie管理器。您可以添加，删除，编辑，搜索，锁定和屏蔽cookies！<br>
+针对Google Chrome浏览器的第一个也是最棒的cookie管理器。<br>
+★ 编辑cookies<br>
+★ 删除cookies<br>
+★ 添加一个新的cookie<br>
+★ 创建cookies<br>
+★ 搜索cookies<br>
+★ 保护cookies (只读cookies)<br>
+★ 拦截cookies (cookie 过滤器)<br>
+★ 导出cookies为JSON, Netscape cookie 文档 (非常适合wget及curl), Perl::LPW<br>
+★ 导入JSON格式cookies<br>
+★ 限制任何cookie的最大有效期<br>
+★ 改进性能，移除旧的cookies<br>
+★ 导入cookies.txt</p>
+<h1 id="功能介绍">功能介绍</h1>
+<h2 id="cookie-属性">cookie 属性</h2>
+<ol>
+<li>打开控制面板 -&gt; EditThisCookie 就可以很方便的编辑当前页面的cookie<br>
+<img src="https://img-blog.csdnimg.cn/20200801160909756.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></li>
+</ol>
+<p>name字段：一个cookie的名称</p>
+<p>value字段：一个cookie的值</p>
+<p>domain字段：可以访问此cookie的域名</p>
+<p>path字段：可以访问此cookie的页面路径</p>
+<p>Size字段：此cookie大小</p>
+<p>http字段：cookie的httponly属性，若此属性为True，则只有在http请求头中会有此cookie信息，而不能通过document.cookie来访问此cookie。</p>
+<p>secure字段：设置是否只能通过https来传递此条cookie。</p>
+<p>expires/Max-Age字段：设置cookie超时时间。如果设置的值为一个时间，则当到达该时间时此cookie失效。不设置的话默认是session，意思是cookie会和session一起失效，当浏览器关闭（并不是浏览器标签关闭，而是整个浏览器关闭）后，cookie失效。</p>
+<p>host-only：在Cookie中不包含Domain属性，或者Domain属性为空，或者Domain属性不合法（不等于页面url中的Domain部分、也不是页面Domain的大域）时为true。此时，我们把这个Cookie称之为HostOnly Cookie</p>
+<h2 id="编辑cookie">编辑cookie</h2>
+<blockquote>
+<p>示例HttpOnly：<br>
+这里我HttpOnly 全部设置为 True，这是js就获取不到cookie</p>
+</blockquote>
+<figure data-type="image" tabindex="3"><img src="https://img-blog.csdnimg.cn/20200801162225361.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<blockquote>
+<p>这里 勾选了_device_id 的 HttpOnly属性，这时js就可以获取到该cookie。</p>
+</blockquote>
+<figure data-type="image" tabindex="4"><img src="https://img-blog.csdnimg.cn/20200801162553522.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<blockquote>
+<p>其他的属性可以自行设置，自行尝试。</p>
+</blockquote>
+<h2 id="其他功能">其他功能</h2>
+<p>其他的功能，大家可以自行试试，很简单不在介绍了。</p>
+<figure data-type="image" tabindex="5"><img src="https://img-blog.csdnimg.cn/20200801162903303.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[windows charles安装使用教程]]></title>
         <id>https://pylemonorg.github.io/post/windows-charles-an-zhuang-shi-yong-jiao-cheng/</id>
