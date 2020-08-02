@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://pylemonorg.github.io</id>
     <title>Gridea</title>
-    <updated>2020-08-02T09:19:33.871Z</updated>
+    <updated>2020-08-02T09:28:12.513Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://pylemonorg.github.io"/>
     <link rel="self" href="https://pylemonorg.github.io/atom.xml"/>
@@ -16,8 +16,32 @@
         <link href="https://pylemonorg.github.io/post/windows-charles-an-zhuang-shi-yong-jiao-cheng/">
         </link>
         <updated>2020-08-02T09:10:40.000Z</updated>
-        <content type="html"><![CDATA[<p>[toc]</p>
-<figure data-type="image" tabindex="1"><img src="https://pylemonorg.github.io/post-images/1596359654996.png" alt="" loading="lazy"></figure>
+        <content type="html"><![CDATA[<p><ul class="markdownIt-TOC">
+<li><a href="#%E5%AE%89%E8%A3%85">安装</a>
+<ul>
+<li><a href="#%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80">下载地址</a></li>
+<li><a href="#%E6%B3%A8%E5%86%8C">注册</a></li>
+</ul>
+</li>
+<li><a href="#%E9%85%8D%E7%BD%AEhttps%E8%AF%81%E4%B9%A6">配置HTTPS证书</a>
+<ul>
+<li><a href="#%E5%AE%89%E8%A3%85pc%E8%AF%81%E4%B9%A6">安装PC证书</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE%E7%9B%91%E5%90%AC%E7%AB%AF%E5%8F%A3">配置监听端口</a></li>
+<li><a href="#%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85%E8%AF%81%E4%B9%A6">手机安装证书</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B">使用教程</a>
+<ul>
+<li><a href="#%E8%BF%87%E6%BB%A4%E4%BD%BF%E7%94%A8">过滤使用</a></li>
+<li><a href="#%E9%87%8D%E5%8F%91%E8%AF%B7%E6%B1%82">重发请求</a></li>
+<li><a href="#%E7%BC%96%E8%BE%91%E8%AF%B7%E6%B1%82">编辑请求</a></li>
+<li><a href="#%E6%96%AD%E7%82%B9%E6%A8%A1%E5%BC%8F">断点模式</a></li>
+<li><a href="#%E6%A8%A1%E6%8B%9F%E7%BD%91%E9%80%9F">模拟网速</a></li>
+<li><a href="#%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86">反向代理</a></li>
+</ul>
+</li>
+</ul>
+</p>
 <h1 id="安装">安装</h1>
 <h2 id="下载地址">下载地址</h2>
 <p>官网下载地址：https://www.charlesproxy.com/latest-release/download.do<br>
@@ -35,7 +59,7 @@ License Key: 0AB20E919CD224F5EE</p>
 <blockquote>
 <p>安装步骤如图所示</p>
 </blockquote>
-<figure data-type="image" tabindex="2"><img src="https://img-blog.csdnimg.cn/20200410160728449.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://img-blog.csdnimg.cn/20200410160728449.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
 <blockquote>
 <p>证书安装注意安装位置：</p>
 </blockquote>
@@ -47,12 +71,12 @@ License Key: 0AB20E919CD224F5EE</p>
 在里面配置监听全部端口（*表示全部）<br>
 配置完之后，就可以拦截请求了。</p>
 </blockquote>
-<figure data-type="image" tabindex="3"><img src="https://img-blog.csdnimg.cn/20200410161424571.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://img-blog.csdnimg.cn/20200410161424571.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
 <h2 id="手机安装证书">手机安装证书</h2>
 <blockquote>
 <p>我这是安卓手机，安装方式如图</p>
 </blockquote>
-<figure data-type="image" tabindex="4"><img src="https://img-blog.csdnimg.cn/20200410161921109.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://img-blog.csdnimg.cn/20200410161921109.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
 <blockquote>
 <p>这时提示手机需要设置代理IP和端口，那就去配置。<br>
 <img src="https://img-blog.csdnimg.cn/20200410162536607.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></p>
@@ -60,7 +84,7 @@ License Key: 0AB20E919CD224F5EE</p>
 <blockquote>
 <p>打开手机WIFI高级设置，配置代理服务器。（提示：必须跟电脑连用一个网络）设置刚刚提示的代理ip和端口，具体操作如图：</p>
 </blockquote>
-<figure data-type="image" tabindex="5"><img src="https://img-blog.csdnimg.cn/20200410162635792.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://img-blog.csdnimg.cn/20200410162635792.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
 <blockquote>
 <p>这时软件提示，点击Allow<br>
 <img src="https://img-blog.csdnimg.cn/20200410162933401.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></p>
@@ -69,11 +93,11 @@ License Key: 0AB20E919CD224F5EE</p>
 <p>在手机中打开浏览器中打开：http://chls.pro/ssl<br>
 下载证书安装 如图所示：</p>
 </blockquote>
-<figure data-type="image" tabindex="6"><img src="https://img-blog.csdnimg.cn/20200410163826841.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://img-blog.csdnimg.cn/20200410163826841.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
 <blockquote>
 <p>这时用手机浏览器打开百度就可以通过Charles 就看见拦截的HTTPS请求了，说明成功！</p>
 </blockquote>
-<figure data-type="image" tabindex="7"><img src="https://img-blog.csdnimg.cn/20200410164157573.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://img-blog.csdnimg.cn/20200410164157573.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
 <h1 id="使用教程">使用教程</h1>
 <h2 id="过滤使用">过滤使用</h2>
 <blockquote>
@@ -83,20 +107,20 @@ License Key: 0AB20E919CD224F5EE</p>
 <p><img src="https://img-blog.csdnimg.cn/20200726165142533.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
 <img src="https://img-blog.csdnimg.cn/20200726165212615.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
 在Filter输入框输入httpbin.org。这时，我们需要的请求就被筛选出来了。我们可以把符合的请求置顶显示，把其他请求放入其他请求中。</p>
-<figure data-type="image" tabindex="8"><img src="https://img-blog.csdnimg.cn/20200726165452737.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://img-blog.csdnimg.cn/20200726165452737.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
 <p>给需要请求的（我这里是httpbin.org）右键设置Focus，把Filter 输入框清空。这时需要的请求被置顶显示，其他的请求被归为other里面了。很方便查看。<br>
 <img src="https://img-blog.csdnimg.cn/20200726165629412.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></p>
 <h2 id="重发请求">重发请求</h2>
-<figure data-type="image" tabindex="9"><img src="https://img-blog.csdnimg.cn/20200726175020729.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="8"><img src="https://img-blog.csdnimg.cn/20200726175020729.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
 <h2 id="编辑请求">编辑请求</h2>
-<figure data-type="image" tabindex="10"><img src="https://img-blog.csdnimg.cn/20200726175054313.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="9"><img src="https://img-blog.csdnimg.cn/20200726175054313.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
 <h2 id="断点模式">断点模式</h2>
 <p><img src="https://img-blog.csdnimg.cn/20200726180539727.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
 <img src="https://img-blog.csdnimg.cn/2020072618071438.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></p>
 <h2 id="模拟网速">模拟网速</h2>
-<figure data-type="image" tabindex="11"><img src="https://img-blog.csdnimg.cn/20200726181235738.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="10"><img src="https://img-blog.csdnimg.cn/20200726181235738.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
 <h2 id="反向代理">反向代理</h2>
-<figure data-type="image" tabindex="12"><img src="https://img-blog.csdnimg.cn/20200726221053753.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="11"><img src="https://img-blog.csdnimg.cn/20200726221053753.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
