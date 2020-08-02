@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://pylemonorg.github.io</id>
     <title>Pylemon Blog</title>
-    <updated>2020-08-02T09:34:39.011Z</updated>
+    <updated>2020-08-02T09:36:27.887Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://pylemonorg.github.io"/>
     <link rel="self" href="https://pylemonorg.github.io/atom.xml"/>
@@ -17,7 +17,7 @@
         </link>
         <updated>2020-08-02T09:10:40.000Z</updated>
         <summary type="html"><![CDATA[<p></p>
-<p>Charles is an HTTP proxy / HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL / HTTPS traffic between their machine and the Internet. This includes requests, responses and the HTTP headers (which contain the cookies and caching information).</p>
+<p>Charles is an HTTP proxy / HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL...</p>
 ]]></summary>
         <content type="html"><![CDATA[<p><ul class="markdownIt-TOC">
 <li><a href="#%E5%AE%89%E8%A3%85">安装</a>
@@ -45,7 +45,7 @@
 </li>
 </ul>
 </p>
-<p>Charles is an HTTP proxy / HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL / HTTPS traffic between their machine and the Internet. This includes requests, responses and the HTTP headers (which contain the cookies and caching information).</p>
+<p>Charles is an HTTP proxy / HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL...</p>
 <!-- more -->
 <h1 id="安装">安装</h1>
 <h2 id="下载地址">下载地址</h2>
