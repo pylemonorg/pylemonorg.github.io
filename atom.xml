@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.pylemon.org</id>
     <title>Pylemon Blog</title>
-    <updated>2020-08-02T12:07:11.444Z</updated>
+    <updated>2020-08-02T12:14:13.899Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.pylemon.org"/>
     <link rel="self" href="https://www.pylemon.org/atom.xml"/>
@@ -11,13 +11,106 @@
     <icon>https://www.pylemon.org/favicon.ico</icon>
     <rights>All rights reserved 2020, Pylemon Blog</rights>
     <entry>
+        <title type="html"><![CDATA[Tampermonkey 油猴 js hook 教程]]></title>
+        <id>https://www.pylemon.org/post/tampermonkey-you-hou-js-hook-jiao-cheng/</id>
+        <link href="https://www.pylemon.org/post/tampermonkey-you-hou-js-hook-jiao-cheng/">
+        </link>
+        <updated>2020-08-02T12:07:55.000Z</updated>
+        <summary type="html"><![CDATA[<p></p>
+]]></summary>
+        <content type="html"><![CDATA[<p><ul class="markdownIt-TOC">
+<li><a href="#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E">参数说明</a></li>
+<li><a href="#%E5%8F%82%E8%80%83">参考</a></li>
+</ul>
+</p>
+<!-- more -->
+<p>Tampermonkey 是一款免费的浏览器扩展和最为流行的用户脚本管理器，它适用于 Chrome, Microsoft Edge, Safari, Opera Next, 和 Firefox。</p>
+<p>虽然有些受支持的浏览器拥有原生的用户脚本支持，但 Tampermonkey 将在您的用户脚本管理方面提供更多的便利。 它提供了诸如便捷脚本安装、自动更新检查、标签中的脚本运行状况速览、内置的编辑器等众多功能， 同时Tampermonkey还有可能正常运行原本并不兼容的脚本。</p>
+<figure data-type="image" tabindex="1"><img src="https://img-blog.csdnimg.cn/20200802170539306.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<h1 id="参数说明">参数说明</h1>
+<p><a href="https://www.tampermonkey.net/documentation.php?ext=dhdg">官方文档</a></p>
+<p>常用的参数解释</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@name</td>
+<td>脚本名称</td>
+</tr>
+<tr>
+<td>@namespace</td>
+<td>脚本的空间名称（我这里填写的网站的名称）</td>
+</tr>
+<tr>
+<td>@author</td>
+<td>编辑作者</td>
+</tr>
+<tr>
+<td>@match</td>
+<td>允许运行的网页 可以写多个，支持正则</td>
+</tr>
+<tr>
+<td>@require</td>
+<td>加载外部js</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>我这里截图下来，供大家参考，防止大家打不开网站</p>
+</blockquote>
+<figure data-type="image" tabindex="2"><img src="https://img-blog.csdnimg.cn/20200802194919720.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://img-blog.csdnimg.cn/20200802194934766.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://img-blog.csdnimg.cn/20200802194946925.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200802195038360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+<img src="https://img-blog.csdnimg.cn/20200802195055741.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></p>
+<h1 id="参考">参考</h1>
+<p>这里我 hook <a href="https://bbs.nightteam.cn/user-login.htm">夜幕论坛登录</a><br>
+看看 他的登录加密参数是如何生成的</p>
+<pre><code class="language-js">// ==UserScript==
+// @name        hook test
+// @namespace    https://bbs.nightteam.cn/
+// @version      0.1
+// @description  登陆信息抓取
+// @author       Pylemon
+// @match        https://bbs.nightteam.cn/user-login.htm
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    function hook(object, attr){
+        var func = object[attr]
+        object[attr] = function(){
+            console.log('hooked', object, attr)
+            var ret = func.apply(object, arguments)
+            debugger
+            return ret
+        }
+    }
+     // hook base64
+     //hook(window, 'btos')
+     // hook md5 加密
+     hook(jQuery, 'md5')
+    // Your code here...
+})();
+</code></pre>
+<p><img src="https://img-blog.csdnimg.cn/20200802193603180.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+这时就可以看到 hook 到的内容了</p>
+<!-- more -->
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[EditThisCookie chrome插件使用&cookie属性介绍]]></title>
         <id>https://www.pylemon.org/post/editthiscookie-chrome-cha-jian-shi-yong-andcookie-shu-xing-jie-shao/</id>
         <link href="https://www.pylemon.org/post/editthiscookie-chrome-cha-jian-shi-yong-andcookie-shu-xing-jie-shao/">
         </link>
         <updated>2020-08-02T10:05:48.000Z</updated>
         <summary type="html"><![CDATA[<p></p>
-<p>EditThisCookie是一个cookie管理器。您可以添加，删除，编辑，搜索，锁定和屏蔽cookies！</p>
 ]]></summary>
         <content type="html"><![CDATA[<p><ul class="markdownIt-TOC">
 <li><a href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85">下载安装</a></li>
@@ -31,8 +124,8 @@
 </li>
 </ul>
 </p>
-<p>EditThisCookie是一个cookie管理器。您可以添加，删除，编辑，搜索，锁定和屏蔽cookies！</p>
 <!-- more -->
+<p>EditThisCookie是一个cookie管理器。您可以添加，删除，编辑，搜索，锁定和屏蔽cookies！</p>
 <figure data-type="image" tabindex="1"><img src="https://img-blog.csdnimg.cn/20200801163359931.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
 <h1 id="下载安装">下载安装</h1>
 <ol>
@@ -96,7 +189,6 @@ EditThisCookie是一个cookie管理器。您可以添加，删除，编辑，搜
         </link>
         <updated>2020-08-02T09:10:40.000Z</updated>
         <summary type="html"><![CDATA[<p></p>
-<p>Charles is an HTTP proxy / HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL...</p>
 ]]></summary>
         <content type="html"><![CDATA[<p><ul class="markdownIt-TOC">
 <li><a href="#%E5%AE%89%E8%A3%85">安装</a>
@@ -124,8 +216,8 @@ EditThisCookie是一个cookie管理器。您可以添加，删除，编辑，搜
 </li>
 </ul>
 </p>
-<p>Charles is an HTTP proxy / HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL...</p>
-<!-- more -->
+<!-- more --> 
+<p>Charles is an HTTP proxy /HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL...</p>
 <h1 id="安装">安装</h1>
 <h2 id="下载地址">下载地址</h2>
 <p>官网下载地址：https://www.charlesproxy.com/latest-release/download.do<br>
@@ -214,7 +306,6 @@ License Key: 0AB20E919CD224F5EE</p>
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p></p>
-<p>mitmproxy is a free and open source interactive HTTPS proxy</p>
 ]]></summary>
         <content type="html"><![CDATA[<p><ul class="markdownIt-TOC">
 <li><a href="#%E7%AE%80%E4%BB%8B-%E5%8F%82%E8%80%83">简介-参考</a></li>
@@ -255,8 +346,8 @@ License Key: 0AB20E919CD224F5EE</p>
 </li>
 </ul>
 </p>
-<p>mitmproxy is a free and open source interactive HTTPS proxy</p>
 <!-- more -->
+<p>mitmproxy is a free and open source interactive HTTPS proxy</p>
 <h1 id="简介-参考">简介-参考</h1>
 <blockquote>
 <p><strong>windows不支持mitmproxy的控制台的接口输出，但是可以使用mitmdump和mitmweb</strong></p>

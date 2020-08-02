@@ -1,9 +1,8 @@
-<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>我的阅读 | Pylemon Blog</title>
+<title>Tampermonkey 油猴 js hook 教程 | Pylemon Blog</title>
 <meta name="description" content="温故而知新" />
 <link rel="shortcut icon" href="https://www.pylemon.org/favicon.ico">
 <link rel="stylesheet" href="https://www.pylemon.org/styles/main.css">
@@ -16,13 +15,19 @@
 <script src="https://www.pylemon.org/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://www.pylemon.org/media/js/functions.js"></script>
     <meta name="referrer" content="never">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iMuFeng/bmdb@1.8.0/dist/Bmdb.min.css">
-    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/iMuFeng/bmdb@1.8.0/dist/Bmdb.min.js'></script>
+    <meta name="description" content="
+参数说明
+参考
+
+
+
+Tampermonkey 是一款免费的浏览器扩展和最为流行的用户脚本管理器，它适用于 Chrome, Microsoft Edge, Safari, Opera Next, 和 Firefox。
+虽然有些受支持的浏览..." />
+    <meta name="keywords" content="Tampermonkey,hook" />
+    <script src="https://www.pylemon.org/media/js/waterfall.min.js"></script>
+    <script src="https://www.pylemon.org/media/js/prism.min.js"></script>
   </head>
   <body>
-    <!-- start: #wrapper -->
-    <div class="wrapper">
-      
             <header id="header" class="grid-container">
         <!-- start: .menu-wrapper -->
         <div class="menu-mobile"> 
@@ -83,14 +88,179 @@
         </div>
       </div>
 
-      <main id="friends" class="main fullcover no-sidebar content">
-        <div class="grid-container module-wrapper enable-masonry aos-init aos-animate" data-aos="fade-up">
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
+
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://www.pylemon.org/post-images/tampermonkey-you-hou-js-hook-jiao-cheng.png');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2020-08-02"><i class="fa fa-calendar"></i><span class="lately">6 分钟前</span></time>
+              
+              <a href="https://www.pylemon.org/post/tampermonkey-you-hou-js-hook-jiao-cheng/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/tampermonkey-you-hou-js-hook-jiao-cheng/"> </span>
+              </a>
+              <span id="/tampermonkey-you-hou-js-hook-jiao-cheng/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="https://www.pylemon.org/tag/hzV3FLQgx/" class="ctag ctag-0 ctag-hzV3FLQgx" aria-label="">Tampermonkey</a>
+                    
+                      <a href="https://www.pylemon.org/tag/4cn1qocVXI/" class="ctag ctag-1 ctag-4cn1qocVXI" aria-label="">hook</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">Tampermonkey 油猴 js hook 教程</h1>
+            </div>
+          </div>
+        </div>  
+
         <div class="epcl-page-wrapper">
-          <div class="section-content" style="margin-top:3em;"></div>
-        </div>
-        </div>
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <p><ul class="markdownIt-TOC">
+<li><a href="#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E">参数说明</a></li>
+<li><a href="#%E5%8F%82%E8%80%83">参考</a></li>
+</ul>
+</p>
+<!-- more -->
+<p>Tampermonkey 是一款免费的浏览器扩展和最为流行的用户脚本管理器，它适用于 Chrome, Microsoft Edge, Safari, Opera Next, 和 Firefox。</p>
+<p>虽然有些受支持的浏览器拥有原生的用户脚本支持，但 Tampermonkey 将在您的用户脚本管理方面提供更多的便利。 它提供了诸如便捷脚本安装、自动更新检查、标签中的脚本运行状况速览、内置的编辑器等众多功能， 同时Tampermonkey还有可能正常运行原本并不兼容的脚本。</p>
+<figure data-type="image" tabindex="1"><img src="https://img-blog.csdnimg.cn/20200802170539306.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<h1 id="参数说明">参数说明</h1>
+<p><a href="https://www.tampermonkey.net/documentation.php?ext=dhdg">官方文档</a></p>
+<p>常用的参数解释</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@name</td>
+<td>脚本名称</td>
+</tr>
+<tr>
+<td>@namespace</td>
+<td>脚本的空间名称（我这里填写的网站的名称）</td>
+</tr>
+<tr>
+<td>@author</td>
+<td>编辑作者</td>
+</tr>
+<tr>
+<td>@match</td>
+<td>允许运行的网页 可以写多个，支持正则</td>
+</tr>
+<tr>
+<td>@require</td>
+<td>加载外部js</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>我这里截图下来，供大家参考，防止大家打不开网站</p>
+</blockquote>
+<figure data-type="image" tabindex="2"><img src="https://img-blog.csdnimg.cn/20200802194919720.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://img-blog.csdnimg.cn/20200802194934766.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://img-blog.csdnimg.cn/20200802194946925.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200802195038360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+<img src="https://img-blog.csdnimg.cn/20200802195055741.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"></p>
+<h1 id="参考">参考</h1>
+<p>这里我 hook <a href="https://bbs.nightteam.cn/user-login.htm">夜幕论坛登录</a><br>
+看看 他的登录加密参数是如何生成的</p>
+<pre><code class="language-js">// ==UserScript==
+// @name        hook test
+// @namespace    https://bbs.nightteam.cn/
+// @version      0.1
+// @description  登陆信息抓取
+// @author       Pylemon
+// @match        https://bbs.nightteam.cn/user-login.htm
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    function hook(object, attr){
+        var func = object[attr]
+        object[attr] = function(){
+            console.log('hooked', object, attr)
+            var ret = func.apply(object, arguments)
+            debugger
+            return ret
+        }
+    }
+     // hook base64
+     //hook(window, 'btos')
+     // hook md5 加密
+     hook(jQuery, 'md5')
+    // Your code here...
+})();
+</code></pre>
+<p><img src="https://img-blog.csdnimg.cn/20200802193603180.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI3NjQ4OTkx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" loading="lazy"><br>
+这时就可以看到 hook 到的内容了</p>
+<!-- more -->
+
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://www.pylemon.org/post-images/editthiscookie-chrome-cha-jian-shi-yong-andcookie-shu-xing-jie-shao.png');"></div>
+                 <a href="https://www.pylemon.org/post/editthiscookie-chrome-cha-jian-shi-yong-andcookie-shu-xing-jie-shao/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2020-08-02">2020-08-02</time>
+                  <h4 class="title white no-margin">EditThisCookie chrome插件使用&amp;cookie属性介绍</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://www.pylemon.org/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
+            
+              <div id="comments" class="bg-white hosted ">
+                <div class="clear"></div>
+<script>
+jQuery(document).ready(function($){
+    $('.vemoji-btn').text('😀');
+    $("#comments").on('click', 'span.vat',function(){
+        $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        $('textarea#veditor').focus();
+    })
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+            if ($(window.location.hash).length) {
+                $('html, body').animate({scrollTop: $(window.location.hash).offset().top-200}, 600);
+                clearInterval(checkExist);
+            }
+        }, 100);
+    }
+})
+</script>
+
+              </div>
+            
+
+            </div>
+          </div>
       </main>
-        <footer id="footer" class="grid-container">
+
+          <footer id="footer" class="grid-container">
         <div class="widgets row gradient-effect">
             <div class="default-sidebar border-effect">
               <div class="grid-33 tablet-grid-50 mobile-grid-100">
@@ -240,15 +410,9 @@
 </script>
     
 
-    <script>
-    new Bmdb({
-      type: 'books',
-      selector: '.section-content',
-      secret: '',
-      noMoreText: '没有更多数据了',
-      limit: 30
-    })
-    </script>
+      
+    <script src="https://www.pylemon.org/media/js/functions-post.js"></script>
+
     </div>
     <!-- end: #wrapper -->
   </body>
