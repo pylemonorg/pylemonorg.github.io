@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://pylemonorg.github.io</id>
     <title>Gridea</title>
-    <updated>2020-08-02T09:15:51.852Z</updated>
+    <updated>2020-08-02T09:19:16.335Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://pylemonorg.github.io"/>
     <link rel="self" href="https://pylemonorg.github.io/atom.xml"/>
@@ -105,14 +105,8 @@ License Key: 0AB20E919CD224F5EE</p>
         <link href="https://pylemonorg.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p><ul class="markdownIt-TOC">
-<li><a href="#%E7%AE%80%E4%BB%8B-%E5%8F%82%E8%80%83">简介-参考</a></li>
-</ul>
-</p>
-<h1 id="简介-参考">简介-参考</h1>
-<blockquote>
-<p><strong>windows不支持mitmproxy的控制台的接口输出，但是可以使用mitmdump和mitmweb</strong></p>
-</blockquote>
+        <summary type="html"><![CDATA[<p></p>
+<p>mitmproxy is a free and open source interactive HTTPS proxy</p>
 ]]></summary>
         <content type="html"><![CDATA[<p><ul class="markdownIt-TOC">
 <li><a href="#%E7%AE%80%E4%BB%8B-%E5%8F%82%E8%80%83">简介-参考</a></li>
@@ -153,11 +147,12 @@ License Key: 0AB20E919CD224F5EE</p>
 </li>
 </ul>
 </p>
+<p>mitmproxy is a free and open source interactive HTTPS proxy</p>
+<!-- more -->
 <h1 id="简介-参考">简介-参考</h1>
 <blockquote>
 <p><strong>windows不支持mitmproxy的控制台的接口输出，但是可以使用mitmdump和mitmweb</strong></p>
 </blockquote>
-<!-- more -->
 <ul>
 <li>参考</li>
 <li><a href="https://mitmproxy.org/">官网</a></li>
